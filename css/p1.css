@@ -4,6 +4,7 @@ body {
     grid-auto-rows: auto;
 }
 
+/* 헤더 제작 시작 */
 header{
     display: flex;
     grid-column: 1/6;
@@ -11,23 +12,29 @@ header{
     height: 50px;
 }
 
+.fi-rr-menu-burger {
+    font-size: 20px;
+    color: gray;
+    margin: 0px 20px;
+    margin-top: 10px;
+}
+
 #logo {
     align-items: start;
     width: 97px;
-    margin-left: 5em;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 #searching {
     position: relative;
-    width: 650px;
+    width: 670px;
     height: 40px;
     margin-left: 18%;
 }
 
 header input {
     position: absolute;
-    width: 85%;
+    width: 82%;
     height: 40px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -38,8 +45,8 @@ header input {
 
 .s-icon {
     position: absolute;
-    right: 60px;
-    width: 60px;
+    right: 65px;
+    width: 65px;
     height: 40px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -51,12 +58,12 @@ header input {
     top: 0px;
     font-size: 36px;
     position: absolute;
-    right: 3px;
+    right: 15px;
 }
 
 #func {
     position: relative;
-    width: 200px;
+    width: 300px;
     height: 40px;
     justify-content: end;
     margin-left: 13%;
@@ -64,26 +71,32 @@ header input {
 
 #make{
     position: absolute;
-    top: 5px;
-    left: 0px;
+    top: 3px;
+    right: 120px;
     border: 0px solid black;
-    padding: 7px 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     font-size: 15px;
 }
 
 .fi-tc-bell {
     position: absolute;
-    top: 5px;
-    right: 65px;
+    top: 7px;
+    right: 80px;
     font-size: 25px;
 }
 
 .fi-ts-circle-user {
     position: absolute;
     top: 5px;
-    right: 0px;
+    right: 20px;
     font-size: 30px;
+}
+/* 헤더 끝 */
+/* 메뉴 제작 시작 */
+
+h3 {
+    padding-left: 20px;
 }
 
 menu {
@@ -99,20 +112,7 @@ ul {
 
 li {
     font-size: 15px;
-    margin: 20px;
-}
-
-
-.fi-ts-house-chimney {
-    padding-right: 30px;
-}
-
-.fi-rr-play {
-    padding-right: 30px;
-}
-
-.fi-brands-youtube {
-    padding-right: 30px;
+    margin: 16px;
 }
 
 #sub {
@@ -120,3 +120,20 @@ li {
     border-bottom: 1px solid rgb(227, 227, 227);
     width: 200px;
 }
+
+menu .fi {
+    padding-right: 30px;
+    font-size: 18px;
+}
+
+.fi-rs-angle-small-right {
+    padding-left: 8px;
+}
+
+#good {
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    width: 210px;
+}
+
+/* 메뉴 제작 끝 */
