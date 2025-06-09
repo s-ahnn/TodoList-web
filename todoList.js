@@ -10,11 +10,23 @@ addButton.addEventListener('click', () => {
     const Check = document.createElement('input');
     Check.type = 'checkbox';
     Check.classList.add('check');
+    //체크박스가 활성화되었을 때 일어나는 이벤트
+    Check.addEventListener('change', () => {
+        if (Check.checked) {
+            //체크박스 활성화 시 취소선과 글씨색 변경
+            Todo.style.textDecoration = 'line-through';
+            Todo.style.color = 'grey';
+        }
+        else {
+            Todo.style.textDecoration = 'none';
+            Todo.style.color = 'black';
+        }
+    })
 
     //할 일 입력칸 생성
     const Todo = document.createElement('input');
     Todo.type = 'text';
-    Todo.placeholder = '할 일 입력';
+    Todo.placeholder = '할 일을 입력하세요.';
     Todo.classList.add('todo');
 
     //할 일 삭제 버튼 생성
