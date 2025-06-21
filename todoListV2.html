@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todoListV2.css">
+</head>
+<body>
+    <!-- 제목 -->
+    <div id="title">
+        <h1>To do List</h1>
+    </div>
+    <!-- 할 일 입력칸 + 추가 버튼 -->
+    <nav>
+        <input placeholder="할 일을 입력하세요." id="todoInput">
+        <button type="button" id="add">+</button>
+        <input type="date" id="dateInput">
+        <input type="time" id="timeInput">
+    </nav>
+    <main>
+        <div id="all"></div>
+        <div id="doing"></div>
+        <div id="done"></div>
+    </main>
+    <script src="todoListV2.js"></script>
+</body>
+</html>
